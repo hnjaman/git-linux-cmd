@@ -3,9 +3,51 @@
 ### Basic Computer Operation
 
 ```
+# Create a directory
+mkdir DirectoryName
+
+# Move to the directory
+cd DirectoryName
+
+# Move to hierarchical directory
+cd DirectoryName/insideDirectoryName
+
+# Remove empty directory
+rm -d DirectoryName
+
+# Remode non-empty directory
+rm -r DirectoryName
+
+# Create file
+touch filename.txt 	# using touch
+
+gedit filename.txt	# using gedit
+
+cat > filename.txt	# using cat
+
 # Rename file  
 mv old.txt new.txt
+
+# Remove file
+rm filename.txt
+
+# Remove multiple file
+rm file1.txt file2.txt
+
+# File open with gedit editor
+gedit file.txt
+
+# File open with nano terminal editor
+nano file.txt
+
+# Check terminal command history 
+history
+
+# Save history in a text file
+history > filename.txt
+
 ```
+
 ### Application running command
 
 ```
@@ -22,7 +64,7 @@ yarn start
 rails s
 ```
 
-### Keyboard shortkeys
+### Linux terminal shortkeys
 
 ```
 # Open terminal
@@ -33,4 +75,20 @@ Ctrl + shift + t
 
 # switch between different tabs 
 alt + number # number=1,2,3...
+
+# Zoom in terminal 
+ctrl + shift + (+)
+
+# Zoom out terminal
+ctrl + (-)
+```
+
+### Intellij IDE shortkeys
+
+```
+# New class within project directory
+alt + insert
+
+# New class within current package
+ctrl + alt + insert
 ```
