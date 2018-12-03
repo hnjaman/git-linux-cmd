@@ -97,4 +97,16 @@ alt + insert
 
 # New class within current package
 ctrl + alt + insert
+
+# Find and jump to the desired class, file
+ctrl + shift + n
+
+# Text search in all files 
+ctrl + shift + f
+
+# switch between intellij editor view to terminal 
+alt + f12
+
+# new tab in intellij terminal
+Ctrl + shift + t
 ```
