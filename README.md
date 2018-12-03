@@ -6,6 +6,9 @@
 # Create a directory
 mkdir DirectoryName
 
+# Rename directory
+mv oldname newname
+
 # Move to the directory
 cd DirectoryName
 
@@ -86,6 +89,9 @@ ctrl + (-)
 ### Intellij IDE shortkeys
 
 ```
+# Run a java main program
+ctrl + shift + f10
+
 # New class within project directory
 alt + insert
 
