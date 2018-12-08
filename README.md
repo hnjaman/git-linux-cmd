@@ -2,136 +2,186 @@
 
 ### Basic Computer Operation
 
-#### Linux user operation
-Show all local user
+##### Linux user operation
+Show all local user of your machine
 ```
 cut -d: -f1 /etc/passwd
 ```
-add new user
+Add new user
 ```
 sudo adduser username
+# or
+sudo useradd username
 ```
-add new user without password
+Add new user without password
 ```
 adduser --disabled-password --gecos "" username
 ```
-grant root access to an user
+Grant root access to an user
 ```
 sudo usermod -aG sudo username
 ```
-read only permission 
+Log in to other user
+```
+su username
+```
+Log out
+```
+exit
+```
+##### File permission
+
+4 => stands for "read",
+
+2 => stands for "write",
+
+1 => stands for "execute", and
+
+0 => stands for "no permission."
+
+Read only permission 
 ```
 chmod 4 id_rsa
 ```
-change permission for directory and file to other user
+All permission (4+2+1=7)
+```
+chmod 7 id_rsa
+```
+change ownership for directory and file to other user
 ```
 sudo chown -R  hnj directory
 sudo chown -R  hnj file.txt
 ```
-# Create a directory
+Create a directory
+```
 mkdir DirectoryName
-
-# Rename directory
+```
+Rename directory
+```
 mv oldname newname
-
-# Move to the directory
+```
+Move to the directory
+```
 cd DirectoryName
-
-# Move to hierarchical directory
+```
+Move to hierarchical directory
+```
 cd DirectoryName/insideDirectoryName
-
-# Remove empty directory
+```
+Remove empty directory
+```
 rm -d DirectoryName
-
-# Remode non-empty directory
+```
+Remode non-empty directory
+```
 rm -r DirectoryName
-
-# Create file
+```
+Create new file
+```
 touch filename.txt 	# using touch
 
 gedit filename.txt	# using gedit
 
 cat > filename.txt	# using cat
-
-# Rename file  
+```
+Rename file  
+```
 mv old.txt new.txt
-
-# Remove file
+```
+Remove file
+```
 rm filename.txt
-
-# Remove multiple file
+```
+Remove multiple file
+```
 rm file1.txt file2.txt
-
-# File open with gedit editor
+```
+File open with gedit editor
+```
 gedit file.txt
-
-# File open with nano terminal editor
+```
+File open with nano terminal editor
+```
 nano file.txt
-
-# Check terminal command history 
+```
+Check terminal command history 
+```
 history
-
-# Save history in a text file
+```
+Save history in a text file
+```
 history > filename.txt
-
 ```
 
 ### Application running command
 
+Maven Spring boot project
 ```
-# Maven Spring boot
 mvn spring-boot:run
-
-# Angular
+```
+Angular project
+```
 ng s --open
-
-# React
+```
+React project
+```
 yarn start
-
-# rails 
+```
+Rails project
+```
 rails s
 ```
 
 ### Linux terminal shortkeys
 
+Open terminal
 ```
-# Open terminal
 ctrl + alt + t
-
-# linux terminal new tab
+```
+Linux terminal new tab
+```
 Ctrl + shift + t
-
-# switch between different tabs 
+```
+Switch between different tabs 
+```
 alt + number # number=1,2,3...
-
-# Zoom in terminal 
+```
+Zoom in terminal fonts
+``` 
 ctrl + shift + (+)
-
-# Zoom out terminal
+```
+Zoom out terminal fonts
+```
 ctrl + (-)
 ```
 
 ### Intellij IDE shortkeys
 
+Run a java main program
 ```
-# Run a java main program
 ctrl + shift + f10
-
-# New class within project directory
+```
+New class within project directory
+```
 alt + insert
-
-# New class within current package
+```
+New class within current package
+```
 ctrl + alt + insert
-
-# Find and jump to the desired class, file
+```
+Find and jump to the desired class, file
+```
 ctrl + shift + n
-
-# Text search in all files 
+```
+Text search in all files 
+```
 ctrl + shift + f
-
-# switch between intellij editor view to terminal 
+```
+Switch between intellij editor view to terminal 
+```
 alt + f12
-
-# new tab in intellij terminal
+```
+New tab in intellij terminal
+```
 Ctrl + shift + t
 ```
