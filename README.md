@@ -41,11 +41,11 @@ exit
 
 Read only permission 
 ```
-chmod 4 id_rsa
+chmod 4 filename
 ```
 All permission (4+2+1=7)
 ```
-chmod 7 id_rsa
+chmod 7 filename
 ```
 change ownership for directory and file to other user
 ```
@@ -118,6 +118,14 @@ history > filename.txt
 Maven Spring boot project
 ```
 mvn spring-boot:run
+```
+Create JAR of Maven Spring boot project
+```
+mvn package
+``` 
+Run JAR
+```
+java -jar filename.jar
 ```
 Angular project
 ```
