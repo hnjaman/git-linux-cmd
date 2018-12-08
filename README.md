@@ -2,6 +2,31 @@
 
 ### Basic Computer Operation
 
+#### Linux user operation
+Show all local user
+```
+cut -d: -f1 /etc/passwd
+```
+add new user
+```
+sudo adduser username
+```
+add new user without password
+```
+adduser --disabled-password --gecos "" username
+```
+grant root access to an user
+```
+sudo usermod -aG sudo username
+```
+read only permission 
+```
+chmod 4 id_rsa
+```
+change permission for directory and file to other user
+```
+sudo chown -R  hnj directory
+sudo chown -R  hnj file.txt
 ```
 # Create a directory
 mkdir DirectoryName
