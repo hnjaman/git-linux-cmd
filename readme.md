@@ -17,6 +17,10 @@ Add new user without password
 ```
 adduser --disabled-password --gecos "" username
 ```
+User password change
+```
+sudo passwd username
+```
 Grant root access to an user
 ```
 sudo usermod -aG sudo username
@@ -29,6 +33,7 @@ Log out
 ```
 exit
 ```
+
 ##### File permission
 
 4 => stands for "read",
