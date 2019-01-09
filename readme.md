@@ -21,6 +21,7 @@ User password change
 ```
 sudo passwd username
 ```
+
 Grant root access to an user
 ```
 sudo usermod -aG sudo username
