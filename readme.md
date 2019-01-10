@@ -120,7 +120,10 @@ history > filename.txt
 ```
 
 ### Application running command
-
+Open firefox
+```
+firefox
+```
 Maven Spring boot project
 ```
 mvn spring-boot:run
@@ -167,6 +170,12 @@ ctrl + shift + (+)
 Zoom out terminal fonts
 ```
 ctrl + (-)
+```
+
+### Linux shortkeys
+Bookmark folder
+```
+ctrl + d
 ```
 
 ### Intellij IDE shortkeys
