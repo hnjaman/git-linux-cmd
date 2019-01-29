@@ -37,14 +37,38 @@ exit
 
 ##### File permission
 
-4 => stands for "read",
+4 => stands for "read"; shortly r
 
-2 => stands for "write",
+2 => stands for "write"; shortly w
 
-1 => stands for "execute", and
+1 => stands for "execute"; shortly x
 
 0 => stands for "no permission."
 
+##### User class symbol
+u => user
+
+g => group
+
+o => Other (anyone else)
+
+example
+```
+chmod 754 install_file.sh
+```
+here,
+
+user will get read(4), write(2) and execute(1) permission; 4+2+1=7
+
+group will get read(4) and execute(1) permission; 4+1=5
+
+other will get only read(4) permission
+
+
+check files permission
+```
+ls -l
+```
 Read only permission 
 ```
 chmod 4 filename
@@ -78,7 +102,7 @@ Remove empty directory
 ```
 rm -d DirectoryName
 ```
-Remode non-empty directory
+Remove non-empty directory
 ```
 rm -r DirectoryName
 ```
