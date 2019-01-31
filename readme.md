@@ -177,6 +177,11 @@ Bookmark folder
 ```
 ctrl + d
 ```
+### VS Code  shortkeys
+Switch cursor focus between editor and terminal 
+```
+ctrl + `
+```
 
 ### Intellij IDE shortkeys
 
