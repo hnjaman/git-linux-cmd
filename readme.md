@@ -142,6 +142,11 @@ Save history in a text file
 ```
 history > filename.txt
 ```
+search in history with a specific text
+below will show all the command from history with java
+```
+history | grep java
+```
 
 ### Application running command
 Open firefox
