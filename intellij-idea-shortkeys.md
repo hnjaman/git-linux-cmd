@@ -40,12 +40,17 @@ move to the declaration
 ctrl + b
 ````
 
-navigate to left/right tab
+navigate to left/right opened tab
 ````
 alt + left/right	
 ````
 
-navigate to the outer/inner cursor 
+navigate to the back/forward cursor 
 ````
-shift+alt+l/r
+shift + alt + left/right
+````
+
+pop-up opened file and menu switcher
+````
+ctrl + tab
 ````
