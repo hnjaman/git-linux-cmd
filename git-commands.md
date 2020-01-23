@@ -1,4 +1,18 @@
+# prerequisite of git commands practice 
+git should be installed in your system  
+**note:** in linux system git remain installed by default.
+
 # git committing 
+
+to create a git repository, first move to the repository or folder and type in your terminal 
+````
+git init
+````
+
+check status of a git repository 
+````
+git status
+````
 
 add all new files in git 
 ```
@@ -42,10 +56,36 @@ switch to the specific commit version of a file
 git checkout commitId filename
 ```
 
-remove file from the stage.
+remove already added file to git.
+**note:** don't be scared it will not delete file from your file system. :smiley:
 ```
 git rm --cached file.txt
 ```
+
+# git stashing 
+**Note:**  
+when you have changed the code but neither your want to commit it nor delete it then use git stash.  
+**git stash saves its record as a stack data structure.**
+
+save a change by a name 
+````
+git stash save "give a name for this change"
+````
+
+show list of your all stashes 
+````
+git stash list
+````
+
+get a stashed changes and remove it from the stash stack
+````
+git stash pop stash@{stashed_index_number}
+````
+
+get a stashed changes and keep it in the stash stack
+````
+git stash apply stash@{stashed_index_number}
+````
 
 # git branching
 
@@ -110,4 +150,6 @@ git push
 push newly created local branch to remote as origin
 ````
 git push --set-upstream origin localBranchName
+# or in short
+git push -u origin localBranchName
 ````
